@@ -1,0 +1,111 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    min-height: 80vh;
+    background-image: url(../img/capa.jpg);
+    background-position: top center;
+    background-size: cover;
+    padding-bottom: 25px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px
+}
+
+.menu ul{
+    display: none;
+    list-style: none;
+}
+
+.titulo-header {
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+.titulo-header>div {
+    padding: 0 20px;
+}
+
+.titulo-header h1 {
+    font-size: 10vmin;
+    margin-top: 100px;
+}
+
+.porque-dancar h2{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.porque {
+    display: flex;
+    margin: 15px 0;
+}
+
+.cursos {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fundo-cursos {
+    background-color: rgba(221,212,174,0.4);
+}
+
+.cursos img {
+    max-width: 100%; 
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 800px) {
+
+    .botao {
+        display:none;
+    }
+
+    .menu ul{
+        display: flex;
+    }
+
+    .menu li {
+        margin-left: 15px;
+    }
+
+    .titulo-header>div {
+        width: 50%;
+    }
+
+    .porque-dancar {
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+    }
+
+
+    .porque-dancar>article {
+        display: flex
+    }
+
+    .porque {
+        flex-direction: column;
+        flex: 1;
+    }
+    .cursos>article {
+        display: flex;
+
+    }
+
+    .cursos>article>div {
+        flex: 1;
+        margin: 0 5px
+    }
+
+}
